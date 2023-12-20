@@ -7,9 +7,9 @@ const data = require("../fixture/user.json")
 
 describe('Admin Painel', () => {
     it('Should publish new products ', async() => {
-        let nome = 'Camiseta Legal pra caramba'
-        let description = 'Produtinho esperto e muito legal, só não tem garantia'
-        let valor = '80'
+        let nome = 'Camiseta vermelha'
+        let description = 'Produto barato e de qualidade'
+        let valor = '40'
 
         await homeScreen.goToLogin()
         await loginScreen.loginStore(data[0].user,data[0].password)
